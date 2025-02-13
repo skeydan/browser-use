@@ -699,7 +699,8 @@ class BrowserContext:
 
 		# await self.remove_highlights()
 
-		return screenshot_b64
+		#return screenshot_b64
+		return base64.b64encode(screenshot)
 
 	async def remove_highlights(self):
 		"""
